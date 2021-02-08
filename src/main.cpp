@@ -7,6 +7,6 @@ int main() {
     string str;
     getline(cin, str);
     cout << "Original: " + str << endl;
-    Utility::toLower(str);
+    Utility::toUpper(str);
     cout << "Modified: " + str << endl;
 }

@@ -8,4 +8,5 @@ namespace Utility {
         Description: Takes a string and modifies it so all characters are lowercase.
     */
     void toLower(string& str);
+    void toUpper(string& str);
 }
