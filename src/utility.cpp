@@ -9,7 +9,9 @@ using namespace std;
 */
 void Utility::toLower(string& str) {
     for(int i = 0; i < str.length(); i++) {
+        // Check to see if the ASCII value of the current character is in between 'A' (65) and 'Z' (90) (inclusive boths sides)
         if((int(str[i]) >= 65 && int(str[i]) <= 90)) {
+            // If so, add 32 to the ASCII value (ex. 'A' [65] to 'a' [97])
             str[i] = int(str[i]) + 32;
         }
     }
