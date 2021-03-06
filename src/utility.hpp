@@ -14,4 +14,5 @@ namespace Utility {
         Description: Takes a string and modifies it so all characters are uppercase.
     */
     void toUpper(string& str);
+    vector<string> splitStringByDelimiter(string input, char delimiter);
 }

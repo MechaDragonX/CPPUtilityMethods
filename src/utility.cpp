@@ -30,3 +30,17 @@ void Utility::toUpper(string& str) {
         }
     }
 }
+vector<string> splitStringByDelimiter(string input, char delimiter) {
+    vector<string> result = {};
+    size_t pos = 0;
+    string token;
+    while((pos = input.find(delimiter)) != string::npos) {
+        token = input.substr(0, pos);
+        if(token != "") {
+            result.push_back(token);
+        }
+        input.erase(0, pos + 1);
+    }
+    result.push_back(input);
+    return result;
+}
